@@ -4,18 +4,14 @@
 # 040-813-340
 # Section 310
 # 2015-03-26
-# This script will create and delete users
-# plus it will let user to change its suplementary group
-# change initial group
-# also capability of chaning default login shell for user account
-# change account expiration date 
+ 
 
 creader=n
 while [ $creader != "Q"] && [ $creader != "q" ]
 do
-echo "A) Create a user account" 
-echo "B) Delete a user account" 
-echo "C) Change supplementary group for a user account " 
+echo "A) Create a user account"
+echo "B) Delete a user account"
+echo "C) Change supplementary group for a user account "
 echo "D) Change initial group for a user account"
 echo "E) Change default login shell for a user account"
 echo "F) Change account expiration date for a user account"
@@ -23,7 +19,7 @@ echo "Q) Quit"
 read creader
 sleep 3
 if [ $creader = "A" ] || [ $creader = "a" ]
-then 
+then
 read -p "Username" username
 read -p "User's home directory" directory
 read -p "Default login shell" logshel
@@ -57,7 +53,7 @@ then
 read -p "Username" $username
 read -p "expire date YYYY-MM-DD" $exdate
 usermod -e $exdate $username
-elif 
+elif
 
 
 done

@@ -1,0 +1,1 @@
+This script will create and delete users, plus it will let user to change its supplementary group, change initial group ,also capability of changing default login shell for user account , and finally change account expiration date

@@ -3,20 +3,16 @@
 # Seyedamin Seyedmahmoudian
 # Section 310
 # 2015-04-02
-# This is a simple calculator that will add or substract two number from each other
-# the script will support two way to opperate its function first one is by accepting 
-# no paramater and three paramater
-
 
 add ()
 {
 ((sum = $1+$2))
-echo "The sum of $1 plus $2 equals" $sum 
+echo "The sum of $1 plus $2 equals" $sum
 }
 
 sub (){
 ((sum = $1-$2))
-echo "The subtract of $1 minus $2 equals" $sum 
+echo "The subtract of $1 minus $2 equals" $sum
 }
 
 
@@ -28,7 +24,7 @@ echo "X)Exit"
 
 menu2 ()
 {
-echo "please enter an integer number or x to exit " 
+echo "please enter an integer number or x to exit "
 
 }
 
@@ -69,7 +65,7 @@ then
 	if [ $m21 = "X" ] || [ $m21 = "x" ]
 	then
 		exit
-	else 
+	else
 		menu3
 		read m3
 
@@ -98,4 +94,3 @@ else
 
 echo "you can not have more than 3 paramater or less than 3"
 fi
-
