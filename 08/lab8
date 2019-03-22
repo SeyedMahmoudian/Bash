@@ -1,0 +1,53 @@
+#!/bin/bash
+# this program will calculate your final grade base
+# on your assignment, test1, test2, and final exam mark in number
+# the result wil be display in letter grades
+read -p "Enter assignment mark (0 to 40): " assignment
+read -p  "Enter Test1 mark (0 to 15):" test1
+read -p "Enter Test2 mark (1 to 15):" test2
+read -p "Enter final Exam mark (1 to 30):" finalexam
+((average=assignment+test1+test2+finalexam))
+echo "bunch of monkeys are calculating your average please be patient"
+sleep 5
+if [ $average -ge 0 ] && [ $average -le 49 ]
+then
+echo "your final grade is F"
+elif [ $average -ge 50 ] && [ $average -le 52 ]
+then
+echo "your final grade is D-"
+elif [ $average -ge 53 ] && [ $average -le 56 ]
+then
+echo "your final grade is D"
+elif [ $average -ge 57 ] && [ $average -le 59 ]
+then
+echo "your final grade s D+"
+elif [ $average -ge 60 ] && [ $average -le 62 ]
+then
+echo "yor final grade is C-" 
+elif [ $average -ge 63 ] && [ $average -le 66 ]
+then 
+echo "your final grade is C"
+elif [ $average -ge 67 ] && [ $average -le 69 ]
+then 
+echo "your final grade is C+"
+elif [ $average -ge 70 ] && [ $average -le 72 ]
+then
+echo "your final grade is B-"
+elif [ $average -ge 73 ] && [ $average -le 76 ]
+then
+echo "your final grade is B"
+elif [ $average -ge 77 ] && [ $average -le 79 ]
+then 
+echo "your final grade is B+"
+elif [ $average -ge 80 ] && [ $average -le 84 ]
+then
+echo "your final grade is A-"
+elif [ $average -ge 85 ] && [ $average -le 89 ]
+then
+echo "your final grade is A"
+elif [ $average -ge 90 ] && [ $average -le 100 ]
+then
+echo "your grade is A+ you can do better :D”
+fi
+
+
